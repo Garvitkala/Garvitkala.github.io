@@ -128,10 +128,34 @@
   <img id="github-streak-stats" src="path-to-github-streak-stats.png" alt="GitHub Streak Stats">
   <img id="github-top-langs" src="path-to-github-top-languages.png" alt="GitHub Top Languages">
   <img id="github-stats-card" src="path-to-github-stats-card.png" alt="GitHub Stats Card">
+</body>
 
   <script>
     // Add any JavaScript code or event listeners here if needed
+    const githubUsername = 'Garvitkala';
+
+const githubStreakStatsImg = document.createElement('img');
+githubStreakStatsImg.setAttribute('src', `https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}`);
+githubStreakStatsImg.setAttribute('alt', 'GitHub Streak Stats');
+githubStreakStatsImg.setAttribute('id', 'github-streak-stats');
+
+const githubTopLangsImg = document.createElement('img');
+githubTopLangsImg.setAttribute('src', `https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUsername}&layout=compact`);
+githubTopLangsImg.setAttribute('alt', 'GitHub Top Languages');
+githubTopLangsImg.setAttribute('id', 'github-top-langs');
+
+const githubStatsCardImg = document.createElement('img');
+githubStatsCardImg.setAttribute('src', `https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true`);
+githubStatsCardImg.setAttribute('alt', 'GitHub Stats Card');
+githubStatsCardImg.setAttribute('id', 'github-stats-card');
+
+const githubCalendarContainer = document.querySelector('.react-activity-calendar');
+const githubStatsImagesContainer = document.body; // Use document.body if you want to add them to the body element directly, adjust this if you have a specific container element.
+
+githubCalendarContainer.appendChild(githubStreakStatsImg);
+githubStatsImagesContainer.appendChild(githubTopLangsImg);
+githubStatsImagesContainer.appendChild(githubStatsCardImg);
+
   </script>
-</body>
 
 </html>
