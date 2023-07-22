@@ -132,6 +132,32 @@
 
   <script>
     // Add any JavaScript code or event listeners here if needed
+
+// Function to handle opening and downloading the resume as a PDF
+function handleResumeButtonClick(resumeLink) {
+  window.open(resumeLink, '_blank'); // Open the resume in a new tab
+  // The code below simulates the download functionality. 
+  // Replace 'path-to-resume.pdf' with the actual path to your resume PDF file.
+  const downloadAnchor = document.createElement('a');
+  downloadAnchor.setAttribute('href', 'Garvit Kalacv tech new.pdf');
+  downloadAnchor.setAttribute('download', 'Garvit Kalacv tech new.pdf');
+  downloadAnchor.click();
+}
+
+// Add event listeners to the buttons in the Resume section and Home/About section
+document.getElementById('resume-button-1').addEventListener('click', function() {
+  const resumeLink1 = document.getElementById('resume-link-1').getAttribute('href');
+  handleResumeButtonClick(resumeLink1);
+});
+
+document.getElementById('resume-button-2').addEventListener('click', function() {
+  const resumeLink2 = document.getElementById('resume-link-2').getAttribute('href');
+  handleResumeButtonClick(resumeLink2);
+});
+
+
+
+
 const githubUsername = 'Garvitkala';
 
 // Update the GitHub streak stats image src attribute
