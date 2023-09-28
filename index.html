@@ -35,7 +35,7 @@
       A self-motivated, hard-working, and ambitious individual who has recently acquired proficiency in full-stack web development, with a focus on Java, JavaScript, HTML, CSS, and SQL. With a strong foundation in these technologies, possesses the skills necessary for both front-end and back-end development, as well as database management. Excited about the opportunity to contribute knowledge and collaborate with a dynamic team in a tech company, leveraging my expertise in full-stack development.
     </p>
 
-<button id="resume-button-1" onclick="window.location.href='Garvit Kala cv.pdf'">Download Resume</button>
+<button id="resume-button-1" >Download Resume</button>
 
 
   </section>
@@ -121,7 +121,7 @@
   </section>
 
   <section id="resume">
-<button id="resume-button-2" onclick="window.location.href='Garvit Kala cv.pdf'">Download Resume</button>
+<button id="resume-button-2">Download Resume</button>
 
 
   </section>
@@ -141,6 +141,49 @@
 </body>
 
   <script>
+<!-- Resume Button in the Resume section -->
+<button id="resume-button-1">Download Resume</button>
+
+<!-- Resume Button in the Home/About section -->
+<button id="resume-button-2">Download Resume</button>
+
+<script>
+  // Function to handle the download when the Resume Button in the Resume section is clicked
+  document.getElementById("resume-button-1").addEventListener("click", function() {
+    // Create an anchor element
+    var a = document.createElement("a");
+    a.href = "Garvit Kala cv.pdf"; // Replace with the actual path to your PDF resume
+    a.download = "Garvit Kala cv.pdf"; // Specify the desired file name
+    a.style.display = "none";
+    
+    // Append the anchor to the document body
+    document.body.appendChild(a);
+    
+    // Trigger a click event on the anchor element to start the download
+    a.click();
+    
+    // Remove the anchor element from the document
+    document.body.removeChild(a);
+  });
+
+  // Function to handle the download when the Resume Button in the Home/About section is clicked
+  document.getElementById("resume-button-2").addEventListener("click", function() {
+    // Create an anchor element
+    var a = document.createElement("a");
+    a.href = "Garvit Kala cv.pdf"; // Replace with the actual path to your PDF resume
+    a.download = "Garvit Kala cv.pdf"; // Specify the desired file name
+    a.style.display = "none";
+    
+    // Append the anchor to the document body
+    document.body.appendChild(a);
+    
+    // Trigger a click event on the anchor element to start the download
+    a.click();
+    
+    // Remove the anchor element from the document
+    document.body.removeChild(a);
+  });
+</script>
 
 
 
