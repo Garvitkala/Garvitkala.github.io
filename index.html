@@ -34,7 +34,9 @@
     <p id="user-detail-intro">
       A self-motivated, hard-working, and ambitious individual who has recently acquired proficiency in full-stack web development, with a focus on Java, JavaScript, HTML, CSS, and SQL. With a strong foundation in these technologies, possesses the skills necessary for both front-end and back-end development, as well as database management. Excited about the opportunity to contribute knowledge and collaborate with a dynamic team in a tech company, leveraging my expertise in full-stack development.
     </p>
-  <button id="resume-button-2">Resume</button>
+<a id="resume-link-2" class="nav-link resume" href="path-to-resume.pdf" target="_blank" download>Resume</a>
+<a id="resume-link-1" class="nav-link resume" href="path-to-resume.pdf" target="_blank" download>Resume</a>
+
 
   </section>
 
@@ -120,7 +122,8 @@
 
   <section id="resume">
       <!-- Resume buttons -->
-  <button id="resume-button-1">Resume</button>
+
+
   </section>
 
 
@@ -138,33 +141,17 @@
 </body>
 
   <script>
-  var resumeButton = document.getElementById("resume-button-2");
-  var pdfFileUrl = "Garvit Kala cv.pdf";
 
-  resumeButton.addEventListener("click", function() {
-    var anchor = document.createElement("a");
-    anchor.style.display = "none";
-    anchor.href = pdfFileUrl;
-    anchor.download = "resume.pdf"; 
-    document.body.appendChild(anchor);
-
-    anchor.click();
-
-    document.body.removeChild(anchor);
-  });
 
 
 const githubUsername = 'Garvitkala';
 
-// Update the GitHub streak stats image src attribute
 const githubStreakStatsImg = document.getElementById('github-streak-stats');
 githubStreakStatsImg.setAttribute('src', `https://github-readme-streak-stats.herokuapp.com/?user=${githubUsername}`);
 
-// Update the GitHub top languages image src attribute
 const githubTopLangsImg = document.getElementById('github-top-langs');
 githubTopLangsImg.setAttribute('src', `https://github-readme-stats.vercel.app/api/top-langs/?username=${githubUsername}&layout=compact`);
 
-// Update the GitHub stats card image src attribute
 const githubStatsCardImg = document.getElementById('github-stats-card');
 githubStatsCardImg.setAttribute('src', `https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true`);
 
