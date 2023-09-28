@@ -125,6 +125,8 @@ document.getElementById("resume-button-1").addEventListener("click", function() 
   a.href = pdfUrl;
   a.target = "_blank";
   a.style.display = "none";
+  a.download = "Garvit_Kala.pdf";
+
   document.body.appendChild(a);
   a.click();
   document.body.removeChild(a);
