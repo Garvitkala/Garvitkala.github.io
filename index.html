@@ -5,13 +5,10 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Portfolio</title>
-  <!-- Add your CSS and JS files here -->
   <link rel="stylesheet" href="style.css">
-
 </head>
 
 <body>
-  <!-- Navbar -->
   <nav id="nav-menu">
     <ul>
       <li><a class="nav-link home" href="#home">Home</a></li>
@@ -23,26 +20,19 @@
     </ul>
   </nav>
 
-  <!-- Home section -->
   <section id="home">
     <img src="a.jpeg" alt="Garvit Kala" class="home-img">
   </section>
 
-  <!-- About section -->
   <section id="about" class="about section">About
     <h2 id="user-detail-name">Garvit Kala</h2>
     <p id="user-detail-intro">
       A self-motivated, hard-working, and ambitious individual who has recently acquired proficiency in full-stack web development, with a focus on Java, JavaScript, HTML, CSS, and SQL. With a strong foundation in these technologies, possesses the skills necessary for both front-end and back-end development, as well as database management. Excited about the opportunity to contribute knowledge and collaborate with a dynamic team in a tech company, leveraging my expertise in full-stack development.
     </p>
-
-<button id="resume-button-2" >Download Resume</button>
-
-
+    <button id="resume-button-2" >Download Resume</button>
   </section>
 
-  <!-- Skills section -->
   <section id="skills">
-    <!-- Technical Skills card -->
     <div class="skills-card">
       <img src="1.jpg" alt="Technical Skill" class="skills-card-img">
       <h3 class="skills-card-name">Technical Skills</h3>
@@ -55,8 +45,6 @@
         <li>Data Structure & Algorithms</li>
       </ul>
     </div>
-  
-    <!-- Non-Technical Skills card -->
     <div class="skills-card">
       <img src="2.jpg" alt="Non-Technical Skill" class="skills-card-img">
       <h3 class="skills-card-name">Non-Technical Skills</h3>
@@ -70,12 +58,8 @@
       </ul>
     </div>
   </section>
-  
 
-
-  <!-- Projects section -->
   <section id="projects">
-    <!-- Project cards -->
     <div class="project-card">
       <img src="path-to-project-image.jpg" alt="Project">
       <h3 class="project-title">mediapp</h3>
@@ -84,7 +68,7 @@
       <a class="project-github-link" href="https://github.com/Garvitkala/Mediaapp/tree/main/SB1" target="_blank">GitHub Repo</a>
       <a class="project-deployed-link" href="https://github.com/Garvitkala/Mediaapp/tree/main/SB1" target="_blank">Deployed Site</a>
     </div>
-        <div class="project-card">
+    <div class="project-card">
       <img src="path-to-project-image.jpg" alt="Project">
       <h3 class="project-title">Every Sunday</h3>
       <p class="project-description">A seamless and enjoyable platform for all travel-related needs for customers. </p>
@@ -92,7 +76,7 @@
       <a class="project-github-link" href="https://github.com/Garvitkala/Mediaapp/tree/main/abhorrent-purpose-9996-main" target="_blank">GitHub Repo</a>
       <a class="project-deployed-link" href="https://github.com/Garvitkala/Mediaapp/tree/main/abhorrent-purpose-9996-main" target="_blank">Deployed Site</a>
     </div>
-        <div class="project-card">
+    <div class="project-card">
       <img src="path-to-project-image.jpg" alt="Project">
       <h3 class="project-title">Gratias Foot E-commerce website</h3>
       <p class="project-description">The product aims to provide customers with a seamless and enjoyable online shopping experience. The website will feature a wide range of products, including shoes, sandals, sneakers, electronics, and more.</p>
@@ -100,7 +84,7 @@
       <a class="project-github-link" href="https://github.com/Garvitkala/gratis-foot-3616-"  target="_blank">GitHub Repo</a>
       <a class="project-deployed-link" href="https://github.com/Garvitkala/gratis-foot-3616-" target="_blank">Deployed Site</a>
     </div>
-        <div class="project-card">
+    <div class="project-card">
       <img src="path-to-project-image.jpg" alt="Project">
       <h3 class="project-title">Gratias Foot E-commerce website</h3>
       <p class="project-description">The product aims to provide customers with a seamless and enjoyable online shopping experience. The website will feature a wide range of products, including shoes, sandals, sneakers, electronics, and more.</p>
@@ -114,45 +98,40 @@
     <a id="contact-github" href="https://github.com/Garvitkala" target="_blank">GitHub Profile</a>
     <a id="contact-linkedin" href="https://www.linkedin.com/in/garvit-kala-64a6a5163/" target="_blank">LinkedIn Profile</a>
     <p id="contact-phone">Phone Number: +91-8053684926</p>
-    <p id="contact-email">Email Address: kala.garvit718@.gmailcom</p>
+    <p id="contact-email">Email Address: kala.garvit718@gmail.com</p>
     <p id="contact-address">Address: HSR Layout, Bangalore 560102, India</p>
   </section>
 
   <section id="resume">
-<button id="resume-button-1">Download Resume</button>
+    <button id="resume-button-1">Download Resume</button>
   </section>
 
-  <div class="react-activity-calendar">
-  </div>
+  <div class="react-activity-calendar"></div>
   <img id="github-streak-stats" src="path-to-github-streak-stats.png" alt="GitHub Streak Stats">
   <img id="github-top-langs" src="path-to-github-top-languages.png" alt="GitHub Top Languages">
   <img id="github-stats-card" src="path-to-github-stats-card.png" alt="GitHub Stats Card">
 </body>
 
-  <script>
+<script>
+document.getElementById("resume-button-1").addEventListener("click", function() {
+  var a = document.createElement("a");
+  a.href = "Garvit Kala cv.pdf";
+  a.download = "Garvit Kala cv.pdf";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
 
-
-  document.getElementById("resume-button-1").addEventListener("click", function() {
-    // Create an anchor element
-    var a = document.createElement("a");
-    a.href = "Garvit Kala cv.pdf"; // Replace with the actual path to your PDF resume
-    a.download = "Garvit Kala cv.pdf"; // Specify the desired file name
-    a.style.display = "none";
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-  });
-
-  document.getElementById("resume-button-2").addEventListener("click", function() {
-    var a = document.createElement("a");
-    a.href = "Garvit Kala cv.pdf"; 
-    a.download = "Garvit Kala cv.pdf"; 
-    a.style.display = "none";
-        document.body.appendChild(a);
-    
-    a.click();
-        document.body.removeChild(a);
-  });
+document.getElementById("resume-button-2").addEventListener("click", function() {
+  var a = document.createElement("a");
+  a.href = "Garvit Kala cv.pdf";
+  a.download = "Garvit Kala cv.pdf";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
 
 
 
@@ -167,7 +146,11 @@ githubTopLangsImg.setAttribute('src', `https://github-readme-stats.vercel.app/ap
 const githubStatsCardImg = document.getElementById('github-stats-card');
 githubStatsCardImg.setAttribute('src', `https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true`);
 
-
-  </script>
+</script>
 
 </html>
+
+
+
+
+
