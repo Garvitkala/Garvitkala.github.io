@@ -106,9 +106,9 @@
     <p id="contact-address">Address: HSR Layout, Bangalore 560102, India</p>
   </section>
 
-<!--   <section id="resume">
+  <section id="resume">
     <button id="resume-button-2">Download Resume</button>
-  </section> -->
+  </section>
 
   <div class="react-activity-calendar">
       <img id="github-streak-stats" src="path-to-github-streak-stats.png" alt="GitHub Streak Stats">
@@ -129,15 +129,15 @@ document.getElementById("resume-button-1").addEventListener("click", function() 
   document.body.removeChild(a);
 });
 
-// document.getElementById("resume-button-2").addEventListener("click", function() {
-//   var b = document.createElement("a");
-//   b.href = "Garvit Kala cv.pdf";
-//   b.download = "Garvit Kala cv.pdf";
-//   b.style.display = "none";
-//   document.body.appendChild(b);
-//   b.click();
-//   document.body.removeChild(b);
-// });
+document.getElementById("resume-button-2").addEventListener("click", function() {
+  var b = document.createElement("a");
+  b.href = "Garvit Kala cv.pdf";
+  b.download = "Garvit Kala cv.pdf";
+  b.style.display = "none";
+  document.body.appendChild(b);
+  b.click();
+  document.body.removeChild(b);
+});
 
 
 
