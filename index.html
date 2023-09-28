@@ -138,7 +138,20 @@
 </body>
 
   <script>
- 
+  var resumeButton = document.getElementById("resume-button-2");
+  var pdfFileUrl = "Garvit Kala cv.pdf";
+
+  resumeButton.addEventListener("click", function() {
+    var anchor = document.createElement("a");
+    anchor.style.display = "none";
+    anchor.href = pdfFileUrl;
+    anchor.download = "resume.pdf"; 
+    document.body.appendChild(anchor);
+
+    anchor.click();
+
+    document.body.removeChild(anchor);
+  });
 
 
 const githubUsername = 'Garvitkala';
