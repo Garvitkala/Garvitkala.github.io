@@ -108,10 +108,8 @@
       <a class="project-github-link" href="https://github.com/Garvitkala/InventoryApp" target="_blank">GitHub Repo</a>
       <a class="project-deployed-link" href="https://github.com/Garvitkala/InventoryApp" target="_blank">Deployed Site</a>
     </div>
-    <!-- Add more project cards as needed -->
   </section>
 
-  <!-- Contact section -->
   <section id="contact">
     <a id="contact-github" href="https://github.com/Garvitkala" target="_blank">GitHub Profile</a>
     <a id="contact-linkedin" href="https://www.linkedin.com/in/garvit-kala-64a6a5163/" target="_blank">LinkedIn Profile</a>
@@ -122,19 +120,10 @@
 
   <section id="resume">
 <button id="resume-button-2">Download Resume</button>
-
-
   </section>
 
-
-
-
-  <!-- GitHub calendar -->
   <div class="react-activity-calendar">
-    <!-- Add your GitHub calendar component here -->
   </div>
-
-  <!-- GitHub statistics images -->
   <img id="github-streak-stats" src="path-to-github-streak-stats.png" alt="GitHub Streak Stats">
   <img id="github-top-langs" src="path-to-github-top-languages.png" alt="GitHub Top Languages">
   <img id="github-stats-card" src="path-to-github-stats-card.png" alt="GitHub Stats Card">
@@ -143,40 +132,26 @@
   <script>
 
 
-  // Function to handle the download when the Resume Button in the Resume section is clicked
   document.getElementById("resume-button-1").addEventListener("click", function() {
     // Create an anchor element
     var a = document.createElement("a");
     a.href = "Garvit Kala cv.pdf"; // Replace with the actual path to your PDF resume
     a.download = "Garvit Kala cv.pdf"; // Specify the desired file name
     a.style.display = "none";
-    
-    // Append the anchor to the document body
-    document.body.appendChild(a);
-    
-    // Trigger a click event on the anchor element to start the download
-    a.click();
-    
-    // Remove the anchor element from the document
-    document.body.removeChild(a);
+        document.body.appendChild(a);
+        a.click();
+        document.body.removeChild(a);
   });
 
-  // Function to handle the download when the Resume Button in the Home/About section is clicked
   document.getElementById("resume-button-2").addEventListener("click", function() {
-    // Create an anchor element
     var a = document.createElement("a");
-    a.href = "Garvit Kala cv.pdf"; // Replace with the actual path to your PDF resume
-    a.download = "Garvit Kala cv.pdf"; // Specify the desired file name
+    a.href = "Garvit Kala cv.pdf"; 
+    a.download = "Garvit Kala cv.pdf"; 
     a.style.display = "none";
+        document.body.appendChild(a);
     
-    // Append the anchor to the document body
-    document.body.appendChild(a);
-    
-    // Trigger a click event on the anchor element to start the download
     a.click();
-    
-    // Remove the anchor element from the document
-    document.body.removeChild(a);
+        document.body.removeChild(a);
   });
 
 
