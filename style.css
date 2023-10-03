@@ -42,7 +42,7 @@ body, h1, h2, h3, p, ul, li {
   
   .home-img {
     width: 200px;
-    height: 200px;
+    height: 300px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   
@@ -164,11 +164,15 @@ body, h1, h2, h3, p, ul, li {
   #github-streak-stats,
   #github-top-langs,
   #github-stats-card {
-    display: block;
     margin: 20px auto;
     max-width: 400px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
   }
+
+  .react-activity-calendar{
+    display: flex;
+  }
+  
 
 
   
