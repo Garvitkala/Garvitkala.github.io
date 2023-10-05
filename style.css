@@ -175,8 +175,7 @@ body, h1, h2, h3, p, ul, li {
 /* Responsive media queries */
 @media screen and (max-width: 768px) {
     #nav-menu ul {
-        flex-direction: column;
-        align-items: center;
+       display:none;
     }
 
     .skills-card {
@@ -190,6 +189,7 @@ body, h1, h2, h3, p, ul, li {
     #projects img {
         width: 100%;
     }
+
 }
 
 @media screen and (max-width: 480px) {
