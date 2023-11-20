@@ -21,14 +21,16 @@
     </ul>
 
   </nav>
+  <h2>About Me</h2>
+
   <section id="home">
     <img src="profilepic.png" alt="Garvit Kala" class="home-img">
 
 
 
   </section>
-  
-  <section id="about" class="about section"><h2>About Section</h2>
+
+  <section id="about" class="about section">
 
     <h1 id="user-detail-name">Garvit Kala</h1>
     <br>
@@ -38,6 +40,8 @@
     <br>
     <button id="resume-button-1" >Download Resume</button>
   </section>
+  <br>
+  <h2>Technical Skills</h2>
 
   <section id="skills">
     <div class="skills-card">
@@ -65,6 +69,7 @@
       <h3 class="skills-card-name">Data Structures</h3>
     </div>
   </section>
+  <h2>My Projects</h2>
 
   <section id="projects">
     <div class="project-card">
@@ -81,7 +86,7 @@
       <p class="project-description">A seamless and enjoyable platform for all travel-related needs for customers. </p>
       <p class="project-tech-stack">Tech Stack: Javascript, HTML, CSS</p>
       <a class="project-github-link" href="https://github.com/Garvitkala/Mediaapp/tree/main/abhorrent-purpose-9996-main" target="_blank">GitHub Repo</a>
-      <a class="project-deployed-link" href="https://drive.google.com/file/d/1ejT774UG1047-542Nl7fdXDWjhWajj-z/view?usp=sharing" target="_blank">Deployed Site</a>
+      <a class="project-deployed-link" href="https://lucky-syrniki-a1aa2b.netlify.app/" target="_blank">Deployed Site</a>
     </div>
     <div class="project-card">
       <img src="online-shopping.jpg" alt="Project">
@@ -89,7 +94,7 @@
       <p class="project-description">The product aims to provide customers with a seamless and enjoyable online shopping experience. The website will feature a wide range of products, including shoes, sandals, sneakers, electronics, and more.</p>
       <p class="project-tech-stack">Tech Stack: Java, HTML, CSS</p>
       <a class="project-github-link" href="https://github.com/Garvitkala/gratis-foot-3616-"  target="_blank">GitHub Repo</a>
-      <a class="project-deployed-link" href="https://drive.google.com/file/d/1-V8ElxoftE51nBD-Gh7obeqJhMGZWVjb/view?usp=sharing" target="_blank">Deployed Site</a>
+      <a class="project-deployed-link" href="https://sprightly-dolphin-274493.netlify.app/" target="_blank">Deployed Site</a>
     </div>
     <div class="project-card">
       <img src="pexels-karolina-grabowska-4968390-2-1.jpg" alt="Project">
@@ -111,6 +116,7 @@
   <img id="github-top-langs" src="path-to-github-top-languages.png" alt="GitHub Top Languages">
   <img id="github-stats-card" src="path-to-github-stats-card.png" alt="GitHub Stats Card">
   </div>
+  <h2>Contact me</h2>
 
   <section id="contact">
     <a id="contact-github" href="https://github.com/Garvitkala" target="_blank">GitHub Profile</a>
@@ -124,13 +130,13 @@
 
 <script>
 document.getElementById("resume-button-1").addEventListener("click", function() {
-  var pdfUrl = "Garvit_Kala.pdf";
+  var pdfUrl = "Garvit-Kala-Resume.pdf";
   var newTab = window.open(pdfUrl, "_blank");
   var a = document.createElement("a");
   a.href = pdfUrl;
   a.target = "_blank";
   a.style.display = "none";
-  a.download = "Garvit_Kala.pdf";
+  a.download = "Garvit-Kala-Resume.pdf";
 
   document.body.appendChild(a);
   a.click();
@@ -138,12 +144,12 @@ document.getElementById("resume-button-1").addEventListener("click", function() 
 });
 
 document.getElementById("resume-button-2").addEventListener("click", function() {
-  var pdfUrl = "Garvit_Kala.pdf";
+  var pdfUrl = "Garvit-Kala-Resume.pdf";
   var a = document.createElement("a");
   var newTab = window.open(pdfUrl, "_blank");
   a.href = pdfUrl;
   a.target = "_blank";
-  a.download = "Garvit_Kala.pdf";
+  a.download = "Garvit-Kala-Resume.pdf";
   a.style.display = "none";
   document.body.appendChild(a);
   a.click();
