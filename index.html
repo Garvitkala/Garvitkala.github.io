@@ -9,6 +9,8 @@
 </head>
 
 <body>
+  <div class="hamburger">&#9776;</div>
+
   <nav id="nav-menu">
     <ul>
       <li><a class="nav-link home" href="#home">Home</a></li>
@@ -168,6 +170,24 @@ githubTopLangsImg.setAttribute('src', `https://github-readme-stats.vercel.app/ap
 
 const githubStatsCardImg = document.getElementById('github-stats-card');
 githubStatsCardImg.setAttribute('src', `https://github-readme-stats.vercel.app/api?username=${githubUsername}&show_icons=true`);
+
+
+document.addEventListener("DOMContentLoaded", function () {
+    const navMenu = document.getElementById("nav-menu");
+    const navLinks = document.querySelector("#nav-menu ul");
+    const hamburger = document.querySelector(".hamburger");
+
+    // Toggle the class 'show' on click of the hamburger icon
+    hamburger.addEventListener("click", function () {
+        navLinks.classList.toggle("show");
+    });
+
+    // Hide the menu when a menu item is clicked (optional)
+    navLinks.addEventListener("click", function () {
+        navLinks.classList.remove("show");
+    });
+});
+
 
 </script>
 
