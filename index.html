@@ -17,16 +17,18 @@
     <ul>
       <li><a class="nav-link home" href="#home">Home</a></li>
       <li><a class="nav-link about" href="#about">About</a></li>
-      <li><a class="nav-link skills" href="#skills">Skills</a></li>
+      <li><a class="nav-link skills" href="#on">Skills</a></li>
       <li><a class="nav-link projects" href="#projects">Projects</a></li>
       <li><a class="nav-link contact" href="#contact">Contact</a></li>
-      <li><a class="nav-link resume" href="#resume">Resume</a></li>
+      <li><a class="nav-link resume" id="resume-button-3" >Resume</a></li>
 
     </ul>
 
   </nav>
  
   <br>
+  <br>
+
 
   <div class="waviy">
     <span style="--i:1">A</span>
@@ -67,9 +69,15 @@
     <button id="resume-button-1" >Download Resume</button>
   </section>
 </div>
-
+<br>
+<br>
   <br>
-  <div class="waviy">
+  <br>
+<br>
+<br>
+<br>
+
+  <div class="waviy" id="on">
     <span style="--i:1">T</span>
     <span style="--i:2">e</span>
     <span style="--i:3">c</span>
@@ -93,6 +101,7 @@
 
 
    </div>
+
   <section id="skills">
     <div class="skills-card">
         <img src="HTML.png" alt="Technical Skill" class="skills-card-img">
@@ -119,6 +128,8 @@
       <h3 class="skills-card-name">Data Structures</h3>
     </div>
   </section>
+  <br>
+<br>
   <div class="waviy">
     <span style="--i:1">M</span>
     <span style="--i:2">y</span>
@@ -183,6 +194,8 @@
   <img id="github-top-langs" src="path-to-github-top-languages.png" alt="GitHub Top Languages">
   <img id="github-stats-card" src="path-to-github-stats-card.png" alt="GitHub Stats Card">
   </div>
+  <br>
+<br>
   <h2>Contact me</h2>
 
   <section id="contact">
@@ -211,6 +224,19 @@ document.getElementById("resume-button-1").addEventListener("click", function() 
 });
 
 document.getElementById("resume-button-2").addEventListener("click", function() {
+  var pdfUrl = "Garvit-Kala-Resume.pdf";
+  var a = document.createElement("a");
+  var newTab = window.open(pdfUrl, "_blank");
+  a.href = pdfUrl;
+  a.target = "_blank";
+  a.download = "Garvit-Kala-Resume.pdf";
+  a.style.display = "none";
+  document.body.appendChild(a);
+  a.click();
+  document.body.removeChild(a);
+});
+
+document.getElementById("resume-button-3").addEventListener("click", function() {
   var pdfUrl = "Garvit-Kala-Resume.pdf";
   var a = document.createElement("a");
   var newTab = window.open(pdfUrl, "_blank");

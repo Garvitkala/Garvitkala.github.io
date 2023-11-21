@@ -328,7 +328,10 @@ text-align: center;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    
 }
+
+
 
 #p{
     display: flex;
@@ -347,7 +350,7 @@ text-align: center;
         position: sticky;
         top: 0px;
         z-index: 10001;
-        text-align: center;
+        text-align: right;
     }
     #p{
         display: block;
@@ -357,17 +360,15 @@ text-align: center;
     }
 
     #nav-menu ul {
-        display: none; 
+        display: none;
         flex-direction: column;
-        position: relative;
+        position: absolute; /* Change from relative to absolute */
         right: 0;
         background-color: #333;
         width: 30%;
-        opacity: 60%;
+        opacity: 80%;
         margin: auto;
         border-radius: 10px;
-        position: sticky;
-
     }
 
     #nav-menu ul.active {
@@ -380,6 +381,7 @@ text-align: center;
     #nav-menu ul li {
         text-align: right;
         height: 20px;
+        padding: 5px;
     }
 
     #nav-menu .hamburger.active {
@@ -460,6 +462,7 @@ text-align: center;
         display:block;
         margin: auto;
         margin-bottom: 800px;
+
     }
 
     .skills-card {
